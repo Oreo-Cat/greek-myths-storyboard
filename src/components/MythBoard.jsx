@@ -68,7 +68,15 @@ export default function MythBoard({ myths, links, depth = 0 }) {
               {myths.map((node) => {
                 const [x, y] = nodePositions[node.id];
                 return (
-                  <g key={node.id} onDoubleClick={() => handleDoubleClick(node)}>
+                  <g key={node.id}>
+                    <MythNode
+                      node={node}
+                      x={x}
+                      y={y}
+                      onClick={setSelectedNode}
+                      onRightClick={handleOpenSubBoard}
+                    />
+                  </g>
                     <MythNode node={node} x={x} y={y} onClick={setSelectedNode} />
                   </g>
                 );
