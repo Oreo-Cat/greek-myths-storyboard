@@ -36,7 +36,7 @@ export default function MythBoard({ myths, links, depth = 0 }) {
     );
   };
 
-  const handleDoubleClick = (node) => {
+  const handleOpenSubBoard = (node) => {
     if (node.subBoard) {
       setSubBoard({ myths: node.subBoard, links: [] });
     }
