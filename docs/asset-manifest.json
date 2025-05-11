@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/greek-myths-storyboard/static/css/main.d19411ef.css",
-    "main.js": "/greek-myths-storyboard/static/js/main.a64847f9.js",
+    "main.css": "/greek-myths-storyboard/static/css/main.63a1b723.css",
+    "main.js": "/greek-myths-storyboard/static/js/main.5ecdf053.js",
     "index.html": "/greek-myths-storyboard/index.html",
-    "main.d19411ef.css.map": "/greek-myths-storyboard/static/css/main.d19411ef.css.map",
-    "main.a64847f9.js.map": "/greek-myths-storyboard/static/js/main.a64847f9.js.map"
+    "main.63a1b723.css.map": "/greek-myths-storyboard/static/css/main.63a1b723.css.map",
+    "main.5ecdf053.js.map": "/greek-myths-storyboard/static/js/main.5ecdf053.js.map"
   },
   "entrypoints": [
-    "static/css/main.d19411ef.css",
-    "static/js/main.a64847f9.js"
+    "static/css/main.63a1b723.css",
+    "static/js/main.5ecdf053.js"
   ]
 }
