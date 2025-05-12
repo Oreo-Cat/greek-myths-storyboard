@@ -44,7 +44,5 @@ Built collaboratively between me and **Jake — a GPT AI code oracle**, this pro
 
 ---
 
-## 🖼️ Visual Preview
-
 ![Prometheus Flame Banner](./flame-banner.svg)
 
