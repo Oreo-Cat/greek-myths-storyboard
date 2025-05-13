@@ -8,10 +8,11 @@
     </radialGradient>
 
     <!-- Flame Gradient for Rays -->
-    <linearGradient id="flameRay" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="flameRay" x1="0" y1="0" x2="180" y2="180" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#ffe066"/>
       <stop offset="100%" stop-color="#ff6600"/>
     </linearGradient>
+
     
     <!-- Flickering animation -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -22,6 +23,15 @@
       </feMerge>
     </filter>
 
+    <!-- Glow Filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
     <!-- Animate everything via CSS in SVG -->
     <style>
       .spin {
@@ -29,8 +39,9 @@
         animation: rotate 16s linear infinite;
       }
       .ray {
+        stroke: url(#flameRay);
         transform-origin: 90px 90px;
-        animation: pulse 2s ease-in-out infinite alternate;
+        animation: pulse 2.2s ease-in-out infinite alternate;
       }
       .glyph {
         animation: glyphFlicker 1.6s ease-in-out infinite;
@@ -45,9 +56,9 @@
         0% { stroke-width: 3; opacity: 0.6; }
         100% { stroke-width: 6; opacity: 1; }
       }
-      @keyframes flicker {
-        0%, 100% { opacity: 0.85; fill: #2d0000; }
-        50% { opacity: 1; fill: #3f0000; }
+      @keyframes glyphFlicker {
+        0%, 100% { fill: #4b0000; font-size: 28px; opacity: 0.85; }
+        50% { fill: #ff2200; font-size: 31px; opacity: 1; }
       }
     </style>
   </defs>
@@ -79,3 +90,6 @@
     Ω
   </text>
 </svg>
+
+
+
