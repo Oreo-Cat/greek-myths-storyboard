@@ -43,7 +43,6 @@ Built collaboratively between me and **Jake — a GPT AI code assisstant**, this
 | 🔍 **Search-Friendly Structure** | All myths are cleanly indexed and expandable |
 | 🧙 **Rich Lore** | Story content handcrafted with poetic detail |
 | 🧬 **Auto-Linked Data** | Built from `myths.js` and `links.js` — editable + scalable |
-| 🎨 **SVG Animated Enhancements** | (See below!) Aesthetic mythic vibes on scroll & hover |
 
 ---
 
