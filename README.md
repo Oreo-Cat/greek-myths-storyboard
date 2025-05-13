@@ -2,7 +2,7 @@
 
 <!-- Small icon centered above title -->
 <p align="center">
-  <img src="./assets/sun-god-animated.svg" alt="Greek Sun Icon" width="60" />
+  <img src="./sun-god-animated.svg" alt="Greek Sun Icon" width="60" />
 </p>
 
 <h1 align="center">
