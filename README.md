@@ -30,7 +30,7 @@ Built collaboratively between me and **Jake — a GPT AI code assisstant**, this
 - 🧭 **Explorable**: Tap into any myth and follow sub-stories as deeply as you wish.
 - 🧩 **Interconnected**: Stories aren't isolated — they’re threaded by cause, timeline, character, and theme.
 - 📚 **Educational**: Dive into lore with high-context `details`, `summary`, and recursive `subBoard` systems.
-- 🔁 **Recursive**: Myths can contain myths — infinitely nested knowledge structures.
+- 🔁 **Recursive**: Myths can contain myths — complex nested knowledge structures.
 
 ---
 
@@ -41,7 +41,7 @@ Built collaboratively between me and **Jake — a GPT AI code assisstant**, this
 | 🧩 **Recursive Sub-Boards** | Dive into mythos within mythos — nodes can infinitely branch |
 | 📊 **Knowledge Graph** | Timeline, theme, character, and causality are linked |
 | 🔍 **Search-Friendly Structure** | All myths are cleanly indexed and expandable |
-| 🧙 **Rich Lore** | Story content handcrafted with poetic detail |
+| 🧙 **Rich Lore** | Story content crafted by AI (Be warned!) |
 | 🧬 **Auto-Linked Data** | Built from `myths.js` and `links.js` — editable + scalable |
 
 ---
