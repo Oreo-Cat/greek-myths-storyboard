@@ -1,8 +1,11 @@
 <!-- README.md -->
 
+<!-- Small icon centered above title -->
+<p align="center">
+  <img src="./assets/sun-god-animated.svg" alt="Greek Sun Icon" width="60" />
+</p>
+
 <h1 align="center">
-  <img src="https://user-images.githubusercontent.com/000000/0000000-greek-sun-god-animation.svg" alt="Greek Myths Storyboard" width="180">
-  <br />
   Greek Myths Storyboard
 </h1>
 
@@ -22,7 +25,7 @@
 
 > **Greek Myths Storyboard** is an interactive, React-powered knowledge graph that maps Greek mythology as an infinite-scrollable web of stories, characters, events, and fate-loops.
 
-Built collaboratively between me and **Jake — a GPT AI code oracle**, this project is designed to be:
+Built collaboratively between me and **Jake — a GPT AI code assisstant**, this project is designed to be:
 
 - 🧭 **Explorable**: Tap into any myth and follow sub-stories as deeply as you wish.
 - 🧩 **Interconnected**: Stories aren't isolated — they’re threaded by cause, timeline, character, and theme.
@@ -44,5 +47,7 @@ Built collaboratively between me and **Jake — a GPT AI code oracle**, this pro
 
 ---
 
-![Prometheus Flame Banner](./flame-banner.svg)
-
+<!-- Centered animated banner -->
+<p align="center">
+  <img src="./flame-banner.svg" alt="Prometheus Flame Banner" width="100%" />
+</p>
