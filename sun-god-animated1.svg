@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <!-- Gradient for sun core -->
+    <radialGradient id="sunCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffea00" />
+      <stop offset="70%" stop-color="#ff9900" />
+      <stop offset="100%" stop-color="#ff3300" />
+    </radialGradient>
+
+    <!-- Flame Gradient for Rays -->
+    <linearGradient id="flameRay" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#ff6600"/>
+    </linearGradient>
+    
+    <!-- Flickering animation -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Animate everything via CSS in SVG -->
+    <style>
+      .spin {
+        transform-origin: 90px 90px;
+        animation: rotate 16s linear infinite;
+      }
+      .ray {
+        transform-origin: 90px 90px;
+        animation: pulse 2s ease-in-out infinite alternate;
+      }
+      .glyph {
+        animation: glyphFlicker 1.6s ease-in-out infinite;
+        fill: #4b0000;
+        filter: url(#glow);
+      }
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+      @keyframes pulse {
+        0% { stroke-width: 3; opacity: 0.6; }
+        100% { stroke-width: 6; opacity: 1; }
+      }
+      @keyframes flicker {
+        0%, 100% { opacity: 0.85; fill: #2d0000; }
+        50% { opacity: 1; fill: #3f0000; }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0d0d0d" />
+
+  <!-- Rotating ray ring -->
+  <g stroke="#ffd700" stroke-width="4" class="spin" filter="url(#glow)">
+    <line class="ray" x1="90" y1="0" x2="90" y2="30"/>
+    <line class="ray" x1="90" y1="150" x2="90" y2="180"/>
+    <line class="ray" x1="0" y1="90" x2="30" y2="90"/>
+    <line class="ray" x1="150" y1="90" x2="180" y2="90"/>
+    <line class="ray" x1="27" y1="27" x2="45" y2="45"/>
+    <line class="ray" x1="135" y1="135" x2="153" y2="153"/>
+    <line class="ray" x1="135" y1="45" x2="153" y2="27"/>
+    <line class="ray" x1="27" y1="153" x2="45" y2="135"/>
+  </g>
+
+  <!-- Core flame -->
+  <circle cx="90" cy="90" r="36" fill="url(#sunCore)" filter="url(#glow)" />
+
+  <!-- Divine Glyph -->
+  <text x="90" y="98" class="glyph"
+        font-family="Georgia, serif"
+        font-size="28"
+        text-anchor="middle"
+        filter="url(#glow)">
+    Ω
+  </text>
+</svg>
